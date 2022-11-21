@@ -53,7 +53,7 @@ const config = {
   },
   autocompleteQuery: buildAutocompleteQueryConfig(),
   apiConnector: connector,
-  alwaysSearchOnInitialLoad: true,
+  alwaysSearchOnInitialLoad: false,
 };
 
 const CustomPagingInfoView = ({ start, end }) => (
@@ -74,27 +74,6 @@ const CustomResultView = ({ result, onClickLink }) => (
       <a className="url-display">{result.url.raw}</a> <button>▼</button>
       <p>{ htmlToReactParser.parse(result.body_content.snippet)}</p>
     </div>
-
-  // <li className="sui-result">
-  //   <div className="sui-result__header">
-  //     <h3>
-  //       <a onClick={onClickLink} href={result.url.raw}>
-  //         {result.title.snippet}
-  //       </a>
-  //     </h3>
-  //   </div>
-
-  //   <div className="sui-result__body">
-  //     <a>{result.url.raw}</a> <button>▼</button>
-  //     <p>{result.body_content.snippet}</p>
-  //     {/* use 'raw' values of fields to access values without snippets */}
-  //     {/* Use the 'snippet' property of fields with dangerouslySetInnerHtml to render snippets */}
-  //     <div
-  //       className="sui-result__details"
-  //       dangerouslySetInnerHTML={{ __html: result.description }}
-  //     ></div>
-  //   </div>
-  // </li>
 );
 
 export default function App() {
