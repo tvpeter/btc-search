@@ -18,7 +18,61 @@
   color: red;
 }
 
+.header {
+    text-align: center;
+    margin-bottom: auto;
+    color: #3a56e4;
+    font-weight:400;
+    padding-top: 5%;
+}
 
+.logo {
+    width: 12rem;
+    margin: auto;
+}
+
+.customization-example {
+    background: #fcfcfc;
+}
+
+
+.sui-layout-header {
+    /* padding: 20% 20%; */
+    border-bottom: 0px;
+    margin: auto 0;
+}
+
+.sui-layout-header:focus {
+    /* padding: 32px 24px; */
+    border-bottom: 0px;
+    /* margin: 1px 0; */
+}
+
+.sui-search-box__text-input:focus header sui-search-box__wrapper {
+    padding-top: 0px;
+}
+
+.sui-search-box__wrapper {
+    width: 50%;
+}
+
+.sui-search-box__wrapper:focus {
+    padding: 32px 24px; 
+}
+
+.sui-search-box__text-input {
+    border-radius: 35px 0px 0px 35px;
+}
+
+.sui-search-box__text-input:focus .header {
+    padding-top: 0px;
+}
+
+.sui-search-box__submit {
+    /* padding-left: 0px; */
+    border-radius: 0 35px 35px 0px;
+    background: #4285F4;
+}
 
 .searchresult {
     margin-left: 8px;
@@ -180,73 +234,4 @@
     z-index: 2;
 }
 
-.pagelistfirst::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: -6px;
-    top: -25px;
-    border-radius: 50px;
-    width: 18px;
-    height: 18px;
-    background-color: red;
-    z-index: 2;
-}
 
-.pagelist li {
-    margin-right: 15px;
-    position: relative;
-}
-
-.pagelistnext {
-    margin-left: 40px;
-    font-size: 13px;
-}
-
-.pagelistnext::before {
-    content: '>';
-    display: block;
-    position: absolute;
-    left: 5px;
-    top: -35px;
-    color: rgb(29, 135, 255);
-    font-size: 20px;
-    transform: scale(0.7, 1.2);
-}
-
-#footer {
-    background-color: rgb(238, 238, 238);
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    font-size: 13px;
-    font-family: 'arial';
-    color: rgb(85, 85, 85);
-}
-
-#footermenu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin-top: 0px;
-    margin-left: 135px;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
-}
-
-#footermenu li {
-    padding-right: 30px;
-}
-
-#footerlocation {
-    display: flex;
-    direction: row;
-    margin-left: 175px;
-    position: relative;
-    top: -5px;
-}
-
-#footerlocation p:nth-of-type(1) {
-    font-weight: bold;
-}

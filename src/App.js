@@ -36,6 +36,7 @@ import {
   getConfig,
   getFacetFields,
 } from "./config/config-helper";
+import logo from './btc.png';
 
 
 const htmlToReactParser = new Parser();
@@ -84,6 +85,10 @@ export default function App() {
           return (
             <div className="App customization-example">
               <ErrorBoundary>
+                <div className="header">
+                  <img src={logo} className="logo" />
+                  <div>Search Bitcoin related publications</div>
+                </div>
                 <Layout
                   header={
                     <SearchBox
