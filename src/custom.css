@@ -17,6 +17,13 @@
 .customization-example .sui-facet-view-more {
   color: red;
 }
+.customization-example .sui-layout-main-body {
+    padding-right: 10px;
+}
+
+.customization-example .sui-results-container {
+    padding-right: 10px;
+}
 
 .header {
     text-align: center;
@@ -48,10 +55,6 @@
     /* margin: 1px 0; */
 }
 
-.sui-search-box__text-input:focus header sui-search-box__wrapper {
-    padding-top: 0px;
-}
-
 .sui-search-box__wrapper {
     width: 50%;
 }
@@ -76,6 +79,8 @@
 
 .searchresult {
     margin-left: 8px;
+    padding-right: 8px;
+    overflow:hidden;
 }
 
 .searchresult h2 {
@@ -233,5 +238,22 @@
     background-color: rgb(255, 196, 0);
     z-index: 2;
 }
+    .customization-example .sui-layout-sidebar-toggle {
+        display:none;
+    }
 
+@media only screen and (max-width: 640px) {
 
+.customization-example .sui-search-box__wrapper {
+    width: 95%;
+}
+.customization-example .header {
+    font-weight: 300;
+    font-size: small;
+}
+
+.customization-example .logo {
+    width: 8rem;
+}
+
+}
