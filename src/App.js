@@ -66,15 +66,17 @@ const CustomPagingInfoView = ({ start, end }) => (
 );
 
 const CustomResultView = ({ result, onClickLink }) => (
-    <div className="searchresult">
-      <h2>
-        <a onClick={onClickLink} href={result.url.raw}>
-          { htmlToReactParser.parse(result.title.snippet) }
-        </a>
-      </h2>
-      <a className="url-display">{result.url.raw}</a> <button>▼</button>
-      <p>{ htmlToReactParser.parse(result.body_content.snippet)}</p>
-    </div>
+  <div className="searchresult">
+    <h2>
+      <a onClick={onClickLink} href={result.url.raw}>
+        {htmlToReactParser.parse(result.title.snippet)}
+      </a>
+    </h2>
+    <a className="url-display">
+      {result.url.raw} <button>▼</button>
+    </a>
+    <p>{htmlToReactParser.parse(result.body_content.snippet)}</p>
+  </div>
 );
 
 export default function App() {

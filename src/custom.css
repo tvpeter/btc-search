@@ -17,13 +17,6 @@
 .customization-example .sui-facet-view-more {
   color: red;
 }
-.customization-example .sui-layout-main-body {
-    padding-right: 10px;
-}
-
-.customization-example .sui-results-container {
-    padding-right: 10px;
-}
 
 .header {
     text-align: center;
@@ -71,6 +64,7 @@
     padding-top: 0px;
 }
 
+
 .sui-search-box__submit {
     /* padding-left: 0px; */
     border-radius: 0 35px 35px 0px;
@@ -78,9 +72,12 @@
 }
 
 .searchresult {
-    margin-left: 8px;
-    padding-right: 8px;
-    overflow:hidden;
+     word-wrap: break-word; 
+    white-space: pre-wrap;
+    word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 25px;
 }
 
 .searchresult h2 {
@@ -89,7 +86,7 @@
     font-weight: normal;
     color: rgb(29, 1, 189);
     margin-bottom: 0px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .url-display {
@@ -245,7 +242,7 @@
 @media only screen and (max-width: 640px) {
 
 .customization-example .sui-search-box__wrapper {
-    width: 95%;
+    width: 90%;
 }
 .customization-example .header {
     font-weight: 300;
@@ -254,6 +251,16 @@
 
 .customization-example .logo {
     width: 8rem;
+}
+
+.searchresult h2 { 
+    font-size: 16px;
+}
+
+.url-display { 
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 }
