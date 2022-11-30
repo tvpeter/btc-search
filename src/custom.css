@@ -1,20 +1,20 @@
 /* We selectedivly override base styles to create a red theme */
-.customization-example .sui-search-box__submit {
+.btc-search .sui-search-box__submit {
   background: none;
   background-color: rgb(29, 1, 189);
 }
 
-.customization-example .sui-layout-sidebar-toggle {
+.btc-search .sui-layout-sidebar-toggle {
   color: red;
   border: 1px solid red;
 }
 
-.customization-example .sui-result__title,
-.customization-example .sui-result__title-link {
+.btc-search .sui-result__title,
+.btc-search .sui-result__title-link {
   color: red;
 }
 
-.customization-example .sui-facet-view-more {
+.btc-search .sui-facet-view-more {
   color: red;
 }
 
@@ -31,7 +31,7 @@
     margin: auto;
 }
 
-.customization-example {
+.btc-search {
     background: #fcfcfc;
 }
 
@@ -235,21 +235,21 @@
     background-color: rgb(255, 196, 0);
     z-index: 2;
 }
-    .customization-example .sui-layout-sidebar-toggle {
+    .btc-search .sui-layout-sidebar-toggle {
         display:none;
     }
 
 @media only screen and (max-width: 640px) {
 
-.customization-example .sui-search-box__wrapper {
+.btc-search .sui-search-box__wrapper {
     width: 90%;
 }
-.customization-example .header {
+.btc-search .header {
     font-weight: 300;
     font-size: small;
 }
 
-.customization-example .logo {
+.btc-search .logo {
     width: 8rem;
 }
 

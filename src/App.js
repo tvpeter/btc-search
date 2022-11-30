@@ -21,12 +21,8 @@ import {
   SingleLinksFacet,
 } from "@elastic/react-search-ui-views";
 import "@elastic/react-search-ui-views/lib/styles/styles.css";
-// We import custom.css here to override styles defined by the out-ofthe-box stylesheet
-// avove
 import "./custom.css";
 
-// This is a custom component we've created.
-import ClearFilters from "./ClearFilters";
 
 import {
   buildAutocompleteQueryConfig,
@@ -85,7 +81,7 @@ export default function App() {
       <WithSearch mapContextToProps={({ wasSearched }) => ({ wasSearched })}>
         {({ wasSearched }) => {
           return (
-            <div className="App customization-example">
+            <div className="App btc-search">
               <ErrorBoundary>
                 <div className="header">
                   <img src={logo} className="logo" />
